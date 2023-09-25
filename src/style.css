@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+
+:root{
+    --red: #dc1c28;
+    --gray:#2e2e2e;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    all: unset;
+    padding: 6px 16px;
+    background: var(--red);
+    height: 32px;
+    color: white;
+    font-weight: 500;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin:0 auto;
+    height: 72px;
+    align-items: center;
+}
+ nav ul {
+    display: flex;
+    list-style: none;
+    
+    gap: 24px;
+    
+ }
+.nav-tag{
+        text-decoration: none; 
+        color: var(--gray);   
+ }
+ .nav-tag:hover{
+    text-decoration: none; 
+    color: var(--red);   
+    transition: ease-in-out 0.3s;
+    
+}
+.nav-btn:hover{
+    cursor: pointer;
+    background: none;
+    color: var(--red); 
+    transition: ease-in-out 0.3s;
+}
+.main{
+    display: flex;
+    max-width: 1280px;
+    margin:0 auto;
+    align-items: center;
+    height: calc(100vh - 72px);
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 595px;
+    
+}
+
+.main h1{
+    font-weight: 800;
+    font-size: 108px;
+    line-height: 102px;
+}
+.about h1{
+    line-height: 112px;
+}
+
+.main p{
+    font-weight: 600;
+    color: var(--gray);
+    max-width: 400px;
+}
+.main-btns{
+    display: flex;
+    gap: 40px;
+    
+}
+ .main-btns button{
+    font-size: 24px;
+ }
+.secondary-btn{
+    background: transparent;
+    color: var(--gray);
+    border: 1px solid var(--gray);
+
+}
+
+
+
+
+.shopping p{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.brand-icons{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+
+.mobile-menu-toggle {
+    display: none; /* Hide the menu toggle button by default */
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: block; /* Display the menu toggle button for smaller screens */
+    }
+
+    .navbar nav ul {
+        display: none; /* Hide the navigation menu by default on smaller screens */
+    }
+
+    .navbar nav ul.active {
+        display: flex; /* Display the navigation menu when active */
+        flex-direction: column;
+        background-color: #fff; /* Set background color for mobile menu */
+        position: absolute;
+        top: 72px; /* Adjust top position as needed */
+        left: 0;
+        width: 100%;
+        padding: 16px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow for the mobile menu */
+    }
+
+    .navbar nav ul li {
+        margin-bottom: 10px; /* Adjust spacing between menu items */
+    }
+    .main-btns button{
+        font-size: 14px;
+        
+     }
+     .main-btns{
+        gap: 4px;
+     }
+    .main h1{
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    
+    .main p{
+        font-size: 10px;
+        font-weight: 600;
+        color: var(--gray);
+        max-width: 400px;
+    }
+
+    .brand-image img{
+        height: 140px;
+        width: 180px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .mobile-menu-toggle {
+        display: block; /* Display the menu toggle button for smaller screens */
+    }
+
+    .navbar nav ul {
+        display: none; /* Hide the navigation menu by default on smaller screens */
+    }
+
+    .navbar nav ul.active {
+        display: flex; /* Display the navigation menu when active */
+        flex-direction: column;
+        background-color: #fff; /* Set background color for mobile menu */
+        position: absolute;
+        top: 72px; /* Adjust top position as needed */
+        left: 0;
+        width: 1100px;
+        padding: 16px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow for the mobile menu */
+    }
+
+    .navbar nav ul li {
+        margin-bottom: 10px; /* Adjust spacing between menu items */
+    }
+    .main h1{
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 35px;
+    }
+    
+    .main p{
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--gray);
+        max-width: 400px;
+    }
+
+    .brand-image img{
+        height: 180px;
+        width: 220px;
+    }
+}
